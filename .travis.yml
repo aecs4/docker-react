@@ -4,7 +4,7 @@ services:
 before_install:
         - docker build -t aecs1/docker-react .
 script:
-        - docker run aecs1/docker-react
+        - docker run -d aecs1/docker-react
 # npm run test -- --coverage
 
 deploy:
